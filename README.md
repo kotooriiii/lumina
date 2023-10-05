@@ -1,37 +1,26 @@
-# Overwolf sample app
+# Teamfight Tactics Companion
 
-This repository contains sample apps that demonstrate some basic points and flows that are relevant when developing Overwolf apps:
+Enhance your Teamfight Tactics (TFT) experience with Lumina! This project is designed to provide players with valuable insights and assistance without compromising the fair play ethos of the game. Whether you're a casual player or a seasoned tactician, our overlay aims to improve your gameplay, offering features like:
 
-- The apps will launch automatically when a supported starts
-- Register to the overwolf.games.events API in order to receive real time events from the game.
-- Define a custom hotkey to be used in-game
-- Communication between the app windows according to our best practices
+- **Optimal Compositions:** Get recommendations for the best team compositions tailored to your current game situation.
 
-## Sample app versions
+- **Item Optimization:** Maximize your champion's potential by receiving guidance on the most effective items to equip.
 
-This repository contains two variants of the sample app:
+- **In-Game Quality of Life:** Enjoy a smoother TFT experience with quality-of-life improvements such as streamlined information displays, timers, and more.
 
-* native - pure js version without any external js framework.
-* ts - typeScript version of the app, that uses external packages,etc.
+- **Post-Game Analysis:** Reflect on your performance with detailed post-game data that helps you identify areas for improvement. Understand your decisions, economy, and positioning to level up your skills.
 
-In the future we will add more variants like React, Vue, etc.
+**Key Features:**
+- *Strategic Insights:* Receive real-time recommendations to refine your strategy and adapt to the evolving game state.
+- *Fair Play Philosophy:* Our overlay is designed to provide assistance without introducing any unfair advantages over other players.
+- *User-Friendly Interface:* An intuitive interface ensures accessibility for players of all skill levels.
 
-## How to load the app
+**How to Use:**
+1. Download and install the Lumina application.
+2. Launch the overlay alongside your TFT game.
+3. Experience enhanced gameplay with insightful recommendations and post-game analysis.
 
-### Download from the store
+**Feedback:**
+We value your feedback! If you have suggestions, encounter issues, or want to share your experience, please open an issue or reach out to us.
 
-It's highly recommended to follow the build steps for setting up the sample app, including downloading the source code and building it manually.
-For those who need it, we can provide a pre-built and pre-packaged version. Contact us at developers@overwolf.com for more details.
-
-### Load as unpacked extension.
-
-You can load the native version of the sample app "as is", without any build process. Just download the repo and under Overwolf's settings, choose Support tab and then Development options. Click the Load unpacked button and choose the relevant folder of the native folder from the repository you just downloaded.
-
-* In order to load an app as "unpacked", you'll first have to be whitelisted as an Overwolf dev. More details on how to be whitelisted can be found [here](https://overwolf.github.io/docs/start/sdk-introduction#whitelist-as-a-developer)
-* To load the typescript version, first you should build it. More details on the readme page under the "ts" folder in this repo.
-
-## Notes
-
-Editing the author or app name in the manifest will prevent loading the app as unpacked app.
-
-For any further information or questions, contact developers@overwolf.com
+Elevate your Teamfight Tactics gameplay with your Teamfight Tactics Companion, Lumina – empowering players to make smarter decisions and enjoy a more rewarding TFT experience!
