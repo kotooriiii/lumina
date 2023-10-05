@@ -1,4 +1,4 @@
-# Teamfight Tactics Companion
+# Lumina
 
 Enhance your Teamfight Tactics (TFT) experience with Lumina! This project is designed to provide players with valuable insights and assistance without compromising the fair play ethos of the game. Whether you're a casual player or a seasoned tactician, our overlay aims to improve your gameplay, offering features like:
 
