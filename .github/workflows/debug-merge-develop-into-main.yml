@@ -15,5 +15,5 @@ jobs:
           git fetch --unshallow
           git checkout main
           git pull
-          git merge --no-ff develop -m "Auto-merge develop into master"
+          git merge --no-ff origin/develop -m "Auto-merge develop into master"
           git push
