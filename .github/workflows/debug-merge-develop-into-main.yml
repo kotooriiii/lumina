@@ -10,6 +10,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+      
+      - name: Set up Git identity
+        run: |
+          git config user.name "${{ secrets.GITHUB_ACTOR }}"
+          git config user.email "${{ secrets.GITHUB_ACTOR }}@users.noreply.github.com"
 
       - name: Debug repository state
         run: |
