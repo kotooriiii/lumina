@@ -17,5 +17,5 @@ jobs:
           git checkout main
           git pull origin main
           git fetch origin develop
-          git merge develop
+          git merge origin/develop
           git push origin main
