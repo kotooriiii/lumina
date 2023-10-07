@@ -1,9 +1,7 @@
 name: debugger
 
 on:
-  push:
-    branches:
-      - develop
+  workflow_dispatch:
 
 jobs:
   merge:
