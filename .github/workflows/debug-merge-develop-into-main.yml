@@ -1,34 +1,19 @@
-name: debugger
-
-on:
+name: debugger v2
+on: 
   workflow_dispatch:
-
 jobs:
-  merge:
+  merge-develop-to-main:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      
-      - name: Set up Git identity
-        run: |
-          git config user.name "kotooriiii"
-          git config user.email "carlosmiranda0643@hotmail.com"
-
-      - name: Debug repository state
-        run: |
-          git branch
-          git log --oneline --graph --all --decorate
-
-      - name: Fetch latest changes
-        run: git fetch
-
-      - name: Debug repository state after fetch
-        run: |
+    - uses: actions/checkout@v2
+    - name: Set Git config
+      run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Github Actions"
+    - name: Merge develop into main
+      run: |
+          git fetch --unshallow
+          git checkout main
           git pull
-          git branch
-          git log --oneline --graph --all --decorate
-
-      - name: Merge develop into main
-        run: git merge --allow-unrelated-histories origin/develop
+          git merge --no-ff develop -m "Auto-merge develop into master"
+          git push
