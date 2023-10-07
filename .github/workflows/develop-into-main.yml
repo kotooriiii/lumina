@@ -2,7 +2,7 @@ name: Merge Develop into Main
 
 on:
   schedule:
-    - cron: '0 */4 * * *'  # Run every 4 hours
+    - cron: '0 2,8,14,20 * * *'  # Run every day at 2am, 8am, 2pm, and 8pm PST
 
 jobs:
   merge:
@@ -12,10 +12,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Merge Develop into Main
+      - name: Merge develop into main
         run: |
           git checkout main
           git pull origin main
-          git fetch origin develop
           git merge develop
           git push origin main
