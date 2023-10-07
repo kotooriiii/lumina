@@ -1,3 +1,10 @@
+name: debugger
+
+on:
+  push:
+    branches:
+      - develop
+
 jobs:
   merge:
     runs-on: ubuntu-latest
