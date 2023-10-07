@@ -1,4 +1,4 @@
-**IMPORTANT: In order to use install this app, you need to be Whitelisted as a developer! (test)
+**IMPORTANT: In order to use install this app, you need to be Whitelisted as a developer! (tetestst)
 (https://overwolf.github.io/docs/start/sdk-introduction#get-whitelisted-as-a-developer)**
 
 # Sample - TS
