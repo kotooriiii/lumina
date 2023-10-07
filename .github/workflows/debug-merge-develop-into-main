@@ -1,0 +1,23 @@
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Debug repository state
+        run: |
+          git branch
+          git log --oneline --graph --all --decorate
+
+      - name: Fetch latest changes
+        run: git fetch
+
+      - name: Debug repository state after fetch
+        run: |
+          git branch
+          git log --oneline --graph --all --decorate
+
+      - name: Merge develop into main
+        run: git merge origin/develop
