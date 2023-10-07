@@ -22,6 +22,8 @@ jobs:
       - name: Debug repository state after fetch
         run: |
           git branch
+          git pull origin main --allow-unrelated-histories
+          git branch
           git log --oneline --graph --all --decorate
 
       - name: Merge develop into main
