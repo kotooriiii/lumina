@@ -1,0 +1,20 @@
+name: Merge Develop into Main
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'  # Run every 4 hours
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Merge Develop into Main
+        run: |
+          git checkout main
+          git pull origin main
+          git merge develop
+          git push origin main
