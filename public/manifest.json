@@ -41,12 +41,12 @@
     "force_browser": "user",
     "windows": {
       "background": {
-        "file": "../src/background/background.html",
+        "file": "background.html",
         "background_optimization": false,
         "is_background_page": true
       },
       "desktop": {
-        "file": "../src/desktop/desktop.html",
+        "file": "desktop.html",
         "desktop_only": true,
         "native_window": true,
         "resizable": true,
@@ -62,7 +62,7 @@
         }
       },
       "in_game": {
-        "file": "../src/in_game/in_game.html",
+        "file": "in_game.html",
         "in_game_only": true,
         "focus_game_takeover": "ReleaseOnHidden",
         "focus_game_takeover_release_hotkey": "sample_app_ts_showhide",
